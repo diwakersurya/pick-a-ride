@@ -1,0 +1,12 @@
+/*layout*/
+
+.o-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.o-layout--column {
+  display: flex;
+  flex-direction: column;
+}
+.o-layout__item {
+}

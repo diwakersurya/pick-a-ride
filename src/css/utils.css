@@ -1,0 +1,165 @@
+/*Util css*/
+.u-bold {
+  font-weight: bold;
+}
+.u-italic {
+  font-style: italic;
+}
+.u-inline {
+  display: inline;
+}
+.u-hide {
+  display: none;
+}
+.u-padding-tiny {
+  padding: var(--tiny);
+}
+.u-padding-left-tiny {
+  padding-left: var(--tiny);
+}
+.u-padding-top-tiny {
+  padding-top: var(--tiny);
+}
+.u-padding-bottom-tiny {
+  padding-bottom: var(--tiny);
+}
+.u-padding-small {
+  padding: var(--small);
+}
+.u-padding {
+  padding: var(--medium);
+}
+.u-padding-left {
+  padding-left: var(--medium);
+}
+.u-padding-horizontal {
+  padding-top: var(--medium);
+  padding-bottom: var(--medium);
+}
+.u-padding-vertical {
+  padding-left: var(--medium);
+  padding-right: var(--medium);
+}
+.u-padding-large {
+  padding: var(--large);
+}
+.u-padding-horizontal-large {
+  padding-top: var(--large);
+  padding-bottom: var(--large);
+}
+.u-padding-vertical-large {
+  padding-left: var(--large);
+  padding-right: var(--large);
+}
+
+.u-padding-huge {
+  padding: var(--huge);
+}
+
+.u-padding-top {
+  padding-top: var(--medium);
+}
+
+/* color util classes*/
+.u-color-primary {
+  color: var(--primary);
+}
+.u-color-error {
+  color: var(--error);
+}
+.u-color-white {
+  color: var(--white);
+}
+.u-color-mock {
+  color: var(--mock);
+}
+.u-color-mock-dark {
+  color: var(--mock-dark);
+}
+.u-bg-white {
+  background: var(--white);
+}
+.u-bg-primary {
+  background: var(--primary);
+}
+
+.u-bg-mock {
+  background: var(--mock);
+}
+.u-bg-selected {
+  background: var(--selected);
+}
+
+/*align-content*/
+.u-align-content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-align-content-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-height-full {
+  height: 100%;
+}
+
+.u-1\/2 {
+  width: 50%;
+}
+.u-1\/12 {
+  width: 8.33%;
+}
+.u-2\/12 {
+  width: 16.66%;
+}
+.u-3\/12 {
+  width: 25%;
+}
+.u-4\/12 {
+  width: 33.33%;
+}
+.u-5\/12 {
+  width: 41.66%;
+}
+.u-6\/12 {
+  width: 50%;
+}
+.u-7\/12 {
+  width: 58.33%;
+}
+.u-8\/12 {
+  width: 66.66%;
+}
+.u-9\/12 {
+  width: 75%;
+}
+.u-10\/12 {
+  width: 83.33%;
+}
+.u-11\/12 {
+  width: 91.66%;
+}
+.u-12\/12 {
+  width: 100%;
+}
+
+.u-64x64 {
+  width: 64px;
+  height: 64px;
+}
+
+.u-absolute {
+  position: absolute;
+}
+.u-relative {
+  position: relative;
+}
+.u-opacity-80 {
+  opacity: 0.8;
+}

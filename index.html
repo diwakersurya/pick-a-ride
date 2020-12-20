@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pick a ride</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="o-layout card u-height-full">
+          <div class="o-layout__item u-align-content-vertical-center u-padding-left u-11/12">
+           <img width="64px" height="48px" alt="logo" src="./assets/cab.png" />
+           <h2 class="u-bold u-inline u-padding-left-tiny">PICK A RIDE</h2>
+        
+            </div>
+            <div class="o-layout__item u-1/12  u-padding-top-tiny u-align-content-vertical-center u-align-content-end ">
+              <div>
+                <img width="64px" height="48px" alt="logo" src="./assets/user-2.png" />
+              </div>
+              </div>
+      </div>
+    </header>
+    <!-- <a href="#login">login</a>
+    <a href="#register">register</a>
+    <a href="#search">search</a> -->
+
+
+
+    <!-- login page start -->
+    <div class="page-container u-hide" data-page="login" data-on-mount="mountLogin" data-on-unmount="unMountLogin">
+      <div class="u-padding-large">
+        <div class="card u-padding-small">
+            <form name="login" >
+                <span class="error text-secondary u-color-error"></span>
+            
+                <div class="group">
+                    <input name="userName" placeholder="10 digit mobile number or emailiD" data-required="true" data-message-required="username is required"></input>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Username</label>
+                </div>
+                <div class="group">
+                    <input type="password" name="password" placeholder="*****" data-required="true" data-message-required="password is required"></input>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Password</label>
+                </div>
+                <a class="text-primary u-color-primary">FORGOT PASSWORD ?</a>
+                <div class="u-align-content-center">
+                  <Button class='btn' type="submit">Login</Button>
+                </div>
+            </form>
+				</div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+    <!-- login page end -->
+
+
+
+
+    <!-- register page start -->
+    <div class="page-container u-hide" data-page="register" data-on-mount="mountRegister" data-on-unmount="unMountRegister">
+      <div class="u-padding-large">
+        <div class="card u-padding-small">
+          <form name="register" >
+          <span class="error text-secondary u-color-error"></span>
+					<div class="group">
+						  <input name="fullName" placeholder="enter your firstname & lastname" data-required="true" data-message-required="username is mandatory field."></input>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Full Name</label>
+          </div>
+          <div class="group">
+            <input name="emailId" placeholder="enter your email ID"></input>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email Id</label>
+        </div>
+        <div class="group">
+          <input name="mobileNo" placeholder="enter your 10 digit mobile number"></input>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Mobile Number</label>
+        </div>
+        <div class="group">
+          <input name="password" placeholder="set your password"></input>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Password (min 6 characters)</label>
+        </div>
+        <div class="group">
+          <input name="rePassword" placeholder="re-enter your password"></input>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Re-enter Password</label>
+        </div>
+        <div class="group">
+          <input name="carModel" placeholder="name of the car you have"></input>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Car Model</label>
+        </div>
+
+        <div class="u-align-content-center">
+          <Button class='btn' type="submit">REGISTER</Button>
+        </div>   
+      </form>     
+        </div>
+        <div class='u-padding-top u-align-content-center'>
+          <label> Already have an account?  <a class="text-primary u-color-primary" href="/#login">LOGIN NOW</a></label>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    <!-- register page end -->
+
+
+
+
+    <!-- search page start -->
+    <div class="page-container u-hide" data-page="search" data-on-mount="mountSearch" data-on-unmount="unMountSearch">
+      <div>
+            <div class="map-container u-relative">
+              <div id="map" class="map-container__map u-absolute u-bg-mock map">
+
+              </div>
+              <div class="map-container__controls u-absolute">
+                <div class="source u-padding-large">
+                  <div class="card u-padding u-bg-white u-opacity-80">
+                    <div class="group">
+                        <input name="source" placeholder="Koramangala"></input>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Start from</label>
+                      </div>
+                    </div>
+                </div>
+                <div class="destination u-padding-large">
+                    <div class="card u-padding u-bg-white u-opacity-80"">
+                    <div class="group">
+                        <input name="destination" placeholder="Whitefield"></input>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Destination</label>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+            <div class="searchResult search-result o-layout">
+              <!-- search results will be populated here -->
+            </div>
+            <div class="u-align-content-center">
+                <Button class='btn confirmRide' >CONFIRM RIDE</Button>
+              </div>   
+    </div>
+    <!-- search page end -->
+    <script src="src/index.js"></script>
+  </body>
+</html>

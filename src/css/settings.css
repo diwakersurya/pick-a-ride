@@ -1,0 +1,14 @@
+:root {
+  --primary: #169cd4;
+  --primary-dark: #1186b8;
+  --white: #ffffff;
+  --error: tomato;
+  --mock: #e5e3e6;
+  --selected: #9acbff;
+  --mock-dark: #8f8f8f;
+  --tiny: 6px;
+  --small: 12px;
+  --medium: 24px;
+  --large: 36px;
+  --huge: 48px;
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+}
+/* css starts here*/
+.page-container {
+  display: block;
+  width: 100%;
+  /* background: tomato; */
+}
